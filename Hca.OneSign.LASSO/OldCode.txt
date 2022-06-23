@@ -1,0 +1,174 @@
+#region OLDMASTERFILECODE
+        //public void ParseTabsInMasterFile(ref Dictionary<string, string> _TabsInMasterFile, string ADGroup)
+        //{
+        //    //changed from Master.ini to "ADGROUP".ini per design change.
+        //    string filename = ADGroup;
+        //    int formerIndex;
+        //    int index = 0;
+        //    StringBuilder sb = new StringBuilder();
+        //    sb.Append(@"C:\Program Files\Sentillion\Vergence Authenticator\");
+        //    sb.Append(filename);
+        //    sb.Append(".ini");
+        //    string path = sb.ToString();
+        //    Utility utility = new Utility();
+        //    //over-arching try block to catch any exceptions
+        //    try
+        //    {
+
+        //        using (StreamReader file = new StreamReader(path))
+        //        {
+        //            while (!file.EndOfStream)
+        //            {
+        //                string line = file.ReadLine();
+        //                line = line.Trim();
+        //                if (!line.StartsWith(";") && line.Contains("="))
+        //                {
+        //                    string[] splitLine = line.Split('=');
+
+        //                    try
+        //                    {
+        //                        formerIndex = index;
+
+        //                        if (Int32.TryParse(splitLine[0].Trim().ToString(), out index))
+        //                        {
+        //                            index = Convert.ToInt32(splitLine[0].Trim());
+        //                        }
+        //                        else
+        //                        {
+        //                            break;
+        //                        }
+
+        //                        //check to see if number is sequencial.
+        //                        if (index - 1 == formerIndex)
+        //                        {
+        //                            //number is sequencial, continue processing
+        //                        }
+        //                        else
+        //                        {
+        //                            //number is not sequencial, break out, because launchpad isn't formatted properly.
+        //                            break;
+        //                        }
+        //                    }
+        //                    catch (ApplicationException ex)
+        //                    {
+        //                        //index is not a number. Catch the error but move on.
+        //                        Logger logger = Logger.GetLogger("LASSOLogger");
+        //                        logger.Fatal(ex, "Fatal Error");
+        //                    }
+        //                    string tab = splitLine[1].Trim().ToString();
+
+        //                    string name = utility.GetDisplayName(tab, ADGroup);
+        //                    _TabsInMasterFile.Add(tab.Trim(), name.Trim());
+
+        //                }
+        //                else if (line.StartsWith("[") && !line.ToUpper().Equals("[TABS]"))
+        //                {
+        //                    break;
+        //                }
+        //            }
+        //            file.Close();
+        //            file.Dispose();
+        //        }
+        //    }
+        //    catch (ApplicationException ex)
+        //    {
+        //        Logger logger = Logger.GetLogger("LASSOLogger");
+        //        logger.Fatal(ex, "Fatal Error");
+        //    }
+        //}
+#endregion
+
+
+
+ private void ReadSnippetSectionToDictionary(string directory, string fileToRead)
+        {
+            dicTabsRoleFile.SsoStringDictionary = new Dictionary<string, string>();
+            StringBuilder sb = new StringBuilder();
+            sb.Append(directory);
+            sb.Append(fileToRead);
+            if (directory.ToUpper().Contains("INITOOLBACKUP"))
+            {
+                sb.Append(".txt");
+            }
+            else
+            {
+                sb.Append(".ini");
+            }
+            
+            if (File.Exists(sb.ToString()))
+            {
+                //continue
+            }
+            else
+            {
+                WriteBackupFile(ADGroup);
+            }
+            int formerIndex;
+            int index = 0;
+            string path = sb.ToString();
+            Utility utility = new Utility();
+            //over-arching try block to catch any exceptions
+            try
+            {
+                using (StreamReader file = new StreamReader(path))
+                {
+                    while (!file.EndOfStream)
+                    {
+                        string line = file.ReadLine();
+                        line = line.Trim();
+                        if (!line.StartsWith(";") && line.Contains("="))
+                        {
+                            if (line.StartsWith("[") && !line.ToUpper().Equals("[TABS]"))
+                            {
+                                break;
+                            }
+                            string[] splitLine = line.Split('=');
+
+                            try
+                            {
+                                formerIndex = index;
+
+                                if (Int32.TryParse(splitLine[0].Trim().ToString(), out index))
+                                {
+                                    index = Convert.ToInt32(splitLine[0].Trim());
+                                }
+                                else
+                                {
+                                    break;
+                                }
+
+                                //check to see if number is sequencial.
+                                if (index - 1 == formerIndex)
+                                {
+                                    //number is sequencial, continue processing
+                                }
+                                else
+                                {
+                                    //number is not sequencial, break out, because launchpad isn't formatted properly.
+                                    break;
+                                }
+                            }
+                            catch (ApplicationException ex)
+                            {
+                                //index is not a number. Catch the error but move on.
+                                //LASSOErrorHandler er = new LASSOErrorHandler();
+                                //er.LogError(ex);
+                            }
+                            string tab = splitLine[1].Trim().ToString();
+                            if (!dicTabsRoleFile.SsoStringDictionary.ContainsKey(tab))
+                            {
+                                dicTabsRoleFile.SsoStringDictionary.Add(tab, GetDisplayName(tab));
+                            }
+                        }
+                    }
+                    file.Close();
+                    file.Dispose();
+                }
+            }
+            catch (ApplicationException ex)
+            {
+                Logger logger = Logger.GetLogger("LASSOLogger");
+                logger.Error(ex, "Fatal Error");
+                throw ex;
+            }
+        }

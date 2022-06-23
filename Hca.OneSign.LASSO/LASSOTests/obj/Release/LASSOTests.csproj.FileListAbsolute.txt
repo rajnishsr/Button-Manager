@@ -1,0 +1,1 @@
+C:\IT-Single_Sign_On\300_SSO_Development\Hca.SSOSolution.LASSO\LASSOTests\obj\Release\LASSOTests.csprojResolveAssemblyReference.cache

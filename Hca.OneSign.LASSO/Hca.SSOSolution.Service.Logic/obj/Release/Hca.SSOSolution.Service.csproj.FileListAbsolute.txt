@@ -1,0 +1,14 @@
+C:\IT-Single_Sign_On\300_SSO_Development\Hca.SSOSolution.LASSO\Hca.SSOSolution.Service.Logic\bin\Release\Hca.SSOSolution.Service.Logic.dll
+C:\IT-Single_Sign_On\300_SSO_Development\Hca.SSOSolution.LASSO\Hca.SSOSolution.Service.Logic\bin\Release\Hca.SSOSolution.Service.Logic.pdb
+C:\IT-Single_Sign_On\300_SSO_Development\Hca.SSOSolution.LASSO\Hca.SSOSolution.Service.Logic\bin\Release\DynamicProxy.dll
+C:\IT-Single_Sign_On\300_SSO_Development\Hca.SSOSolution.LASSO\Hca.SSOSolution.Service.Logic\bin\Release\Hca.DevBlocks.Common.dll
+C:\IT-Single_Sign_On\300_SSO_Development\Hca.SSOSolution.LASSO\Hca.SSOSolution.Service.Logic\bin\Release\Hca_DevBlocks_Common.dll
+C:\IT-Single_Sign_On\300_SSO_Development\Hca.SSOSolution.LASSO\Hca.SSOSolution.Service.Logic\bin\Release\log4net.dll
+C:\IT-Single_Sign_On\300_SSO_Development\Hca.SSOSolution.LASSO\Hca.SSOSolution.Service.Logic\bin\Release\Hca_DevBlocks_Cipher.dll
+C:\IT-Single_Sign_On\300_SSO_Development\Hca.SSOSolution.LASSO\Hca.SSOSolution.Service.Logic\bin\Release\DynamicProxy.xml
+C:\IT-Single_Sign_On\300_SSO_Development\Hca.SSOSolution.LASSO\Hca.SSOSolution.Service.Logic\bin\Release\Hca_DevBlocks_Common.pdb
+C:\IT-Single_Sign_On\300_SSO_Development\Hca.SSOSolution.LASSO\Hca.SSOSolution.Service.Logic\bin\Release\Hca_DevBlocks_Common.xml
+C:\IT-Single_Sign_On\300_SSO_Development\Hca.SSOSolution.LASSO\Hca.SSOSolution.Service.Logic\bin\Release\log4net.xml
+C:\IT-Single_Sign_On\300_SSO_Development\Hca.SSOSolution.LASSO\Hca.SSOSolution.Service.Logic\obj\Release\Hca.SSOSolution.Service.Logic.dll
+C:\IT-Single_Sign_On\300_SSO_Development\Hca.SSOSolution.LASSO\Hca.SSOSolution.Service.Logic\obj\Release\Hca.SSOSolution.Service.Logic.pdb
+C:\IT-Single_Sign_On\300_SSO_Development\Hca.SSOSolution.LASSO\Hca.SSOSolution.Service.Logic\obj\Release\Hca.SSOSolution.Service.csprojResolveAssemblyReference.cache

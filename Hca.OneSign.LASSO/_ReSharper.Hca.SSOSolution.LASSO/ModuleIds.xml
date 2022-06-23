@@ -1,0 +1,6 @@
+<Modules>
+  <Module PersistentId="E0C5AE51-3F12-4BF2-805B-63735DF3A56E" ModuleId="Hca.SSOSolution.ErrorHandler" />
+  <Module PersistentId="EF9F56B2-FD0B-46A1-8745-9656A7252C56" ModuleId="Hca.SSOSolution.Service" />
+  <Module PersistentId="369EBB5D-1129-429B-88E3-5257B74C2F15" ModuleId="Hca.SSOSolution.LASSO.UI" />
+  <Module PersistentId="9FB62540-4045-40FF-B0DA-E79E97F05232" ModuleId="Hca.SSOSolution.Dictionary" />
+</Modules>

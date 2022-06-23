@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BF5EC83C-18DD-4250-A9AD-D6FF0F0D77B5}"
+	ProjectSection(SolutionItems) = preProject
+		Hca.SSOSolution.LASSO.vsmdi = Hca.SSOSolution.LASSO.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hca.SSOSolution.LASSO.UI", "Hca.SSOSolution.LASSO.UI\Hca.SSOSolution.LASSO.UI.csproj", "{369EBB5D-1129-429B-88E3-5257B74C2F15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hca.SSOSolution.Service", "Hca.SSOSolution.Service.Logic\Hca.SSOSolution.Service.csproj", "{EF9F56B2-FD0B-46A1-8745-9656A7252C56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LASSOTests", "LASSOTests\LASSOTests.csproj", "{EC6C6730-8440-472E-98F5-1FF103779BD0}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://nadcwpapptfs01:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Hca.SSOSolution.LASSO.UI\\Hca.SSOSolution.LASSO.UI.csproj
+		SccProjectName1 = Hca.SSOSolution.LASSO.UI
+		SccLocalPath1 = Hca.SSOSolution.LASSO.UI
+		SccProjectUniqueName2 = Hca.SSOSolution.Service.Logic\\Hca.SSOSolution.Service.csproj
+		SccProjectName2 = Hca.SSOSolution.Service.Logic
+		SccLocalPath2 = Hca.SSOSolution.Service.Logic
+		SccProjectUniqueName3 = LASSOTests\\LASSOTests.csproj
+		SccProjectName3 = LASSOTests
+		SccLocalPath3 = LASSOTests
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Hca.SSOSolution.LASSO.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{369EBB5D-1129-429B-88E3-5257B74C2F15}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{369EBB5D-1129-429B-88E3-5257B74C2F15}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{369EBB5D-1129-429B-88E3-5257B74C2F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{369EBB5D-1129-429B-88E3-5257B74C2F15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF9F56B2-FD0B-46A1-8745-9656A7252C56}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{EF9F56B2-FD0B-46A1-8745-9656A7252C56}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{EF9F56B2-FD0B-46A1-8745-9656A7252C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF9F56B2-FD0B-46A1-8745-9656A7252C56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC6C6730-8440-472E-98F5-1FF103779BD0}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6C6730-8440-472E-98F5-1FF103779BD0}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{EC6C6730-8440-472E-98F5-1FF103779BD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6C6730-8440-472E-98F5-1FF103779BD0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

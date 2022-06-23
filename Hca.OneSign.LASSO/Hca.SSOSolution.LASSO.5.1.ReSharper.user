@@ -1,0 +1,91 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="369EBB5D-1129-429B-88E3-5257B74C2F15/f:LASSOForm.cs" caret="3877" fromTop="81" />
+      <File id="E0C5AE51-3F12-4BF2-805B-63735DF3A56E/f:LASSOErrorHandler.cs" caret="0" fromTop="0" />
+      <File id="9FB62540-4045-40FF-B0DA-E79E97F05232/f:DictionaryParser.cs" caret="0" fromTop="0" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:SingleSignOnService.cs" caret="284" fromTop="11" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:IAnimal.cs" caret="150" fromTop="6" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:IFrog.cs" caret="162" fromTop="7" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:ISingleSignOnService.cs" caret="272" fromTop="10" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:Utility.cs" caret="1479" fromTop="0" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:Frog.cs" caret="515" fromTop="14" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:SingleSignOnServiceTest.cs" caret="192" fromTop="9" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="E0C5AE51-3F12-4BF2-805B-63735DF3A56E/f:LASSOErrorHandler.cs" caret="117" fromTop="5" />
+      <File id="E0C5AE51-3F12-4BF2-805B-63735DF3A56E/f:LASSOErrorHandler.cs" caret="234" fromTop="10" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:Utility.cs" caret="106" fromTop="4" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:Utility.cs" caret="1994" fromTop="14" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:Utility.cs" caret="3557" fromTop="20" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:Utility.cs" caret="4862" fromTop="18" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:Utility.cs" caret="8624" fromTop="24" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:Utility.cs" caret="11711" fromTop="16" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:Utility.cs" caret="13466" fromTop="15" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:Utility.cs" caret="7733" fromTop="14" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:Utility.cs" caret="11065" fromTop="14" />
+      <File id="369EBB5D-1129-429B-88E3-5257B74C2F15/f:LASSOForm.cs" caret="190" fromTop="7" />
+      <File id="369EBB5D-1129-429B-88E3-5257B74C2F15/f:LASSOForm.cs" caret="2311" fromTop="14" />
+      <File id="369EBB5D-1129-429B-88E3-5257B74C2F15/f:LASSOForm.cs" caret="3303" fromTop="14" />
+      <File id="369EBB5D-1129-429B-88E3-5257B74C2F15/f:LASSOForm.cs" caret="3877" fromTop="14" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:Utility.cs" caret="5403" fromTop="18" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:ISingleSignOnService.cs" caret="0" fromTop="0" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:SingleSignOnService.cs" caret="325" fromTop="6" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:SingleSignOnService.cs" caret="1787" fromTop="20" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:SingleSignOnService.cs" caret="2101" fromTop="23" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:ISingleSignOnService.cs" caret="272" fromTop="10" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:SingleSignOnService.cs" caret="2436" fromTop="24" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:SingleSignOnService.cs" caret="242" fromTop="9" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:SingleSignOnServiceTest.cs" caret="382" fromTop="13" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:IAnimal.cs" caret="218" fromTop="10" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:IFrog.cs" caret="203" fromTop="9" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:IFrog.cs" caret="165" fromTop="7" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:Frog.cs" caret="145" fromTop="7" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:Frog.cs" caret="515" fromTop="14" />
+      <File id="EF9F56B2-FD0B-46A1-8745-9656A7252C56/f:SingleSignOnServiceTest.cs" caret="172" fromTop="8" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.4\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="using" priority="0" />
+      <Item value="Hca" priority="1" />
+      <Item value="Common" priority="1" />
+      <Item value="Logging" priority="1" />
+      <Item value="void" priority="4" />
+      <Item value="string" priority="4" />
+      <Item value="Logger`0" priority="0" />
+      <Item value="logger" priority="1" />
+      <Item value="return" priority="0" />
+      <Item value="whoDat" priority="1" />
+      <Item value="ISingleSignOnService`0" priority="1" />
+      <Item value="new" priority="2" />
+      <Item value="SingleSignOnService" priority="0" />
+      <Item value="IAnimal`0" priority="0" />
+      <Item value="object" priority="0" />
+      <Item value="var" priority="0" />
+      <Item value="Frog`0" priority="2" />
+      <Item value="Frog" priority="0" />
+      <Item value="myFrog" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Hca.Common.Logging.Logger">
+      <Item value="GetLogger`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

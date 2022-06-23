@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>\\corpssovm01\c%24\users\public\desktop\rls\|\\corpdpt02\DFS\Certification\Application Builds\Stage\SSO\DEV\DeployToQA\|C:\BTNMGR\DeployToQA\|\\corpdpt02\DFS\Certification\Application Builds\Stage\SSO\DEV\ButtonManagerVersion2\|\\corpdpt02\DFS\Certification\Application Builds\Stage\SSO\DEV\</PublishUrlHistory>
+    <InstallUrlHistory>
+    </InstallUrlHistory>
+    <SupportUrlHistory>
+    </SupportUrlHistory>
+    <UpdateUrlHistory>
+    </UpdateUrlHistory>
+    <BootstrapperUrlHistory>\\HCA\INITool\NET3.5\|\\HCA\INITool\NET3.5</BootstrapperUrlHistory>
+    <ErrorReportUrlHistory>
+    </ErrorReportUrlHistory>
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <StartArguments>"\\Hca\initool\MasterFile\\" -AppParams="ASC"</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartArguments>\\Hca\initool\MasterFile\MasterWin7.ini -AppParams="ASC"
+</StartArguments>
+  </PropertyGroup>
+</Project>

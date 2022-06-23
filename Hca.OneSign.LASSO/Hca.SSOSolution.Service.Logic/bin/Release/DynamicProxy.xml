@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DynamicProxy</name>
+    </assembly>
+    <members>
+        <member name="T:Cramon.NetExtension.DynamicProxy.DynamicProxyFactory">
+            <summary>
+            Factory for creating Dynamic proxy instances
+            <code>
+            TestClasses.SimpleClass testClass = new TestClasses.SimpleClass();
+            TestClasses.ISimpleInterface testClassProxy = (TestClasses.ISimpleInterface) DynamicProxyFactory.Instance.CreateProxy(testClass, new InvocationDelegate(InvocationHandler));
+            testClassProxy.Method1();
+            </code>
+            <see cref="T:Cramon.NetExtension.DynamicProxy.IDynamicProxy"/>
+            </summary>
+        </member>
+        <member name="M:Cramon.NetExtension.DynamicProxy.DynamicProxyFactory.CreateProxy(System.Object,Cramon.NetExtension.DynamicProxy.InvocationDelegate)">
+            <summary>
+            Create a proxy for the target object
+            </summary>
+            <param name="target">The object to create a proxy for</param>
+            <param name="invocationHandler">The invocation handler for the proxy</param>
+            <returns>The dynamic proxy instance</returns>
+        </member>
+        <member name="M:Cramon.NetExtension.DynamicProxy.DynamicProxyFactory.CreateProxy(System.Object,Cramon.NetExtension.DynamicProxy.InvocationDelegate,System.Object)">
+            <summary>
+            Create a proxy for the target object
+            </summary>
+            <param name="target">The object to create a proxy for</param>
+            <param name="invocationHandler">The invocation handler for the proxy</param>
+            <param name="context">The context for invocation. It is a pass through string to the invocation handler.</param>
+            <returns>The dynamic proxy instance</returns>
+        </member>
+        <member name="M:Cramon.NetExtension.DynamicProxy.DynamicProxyFactory.CreateProxy(System.Object,Cramon.NetExtension.DynamicProxy.InvocationDelegate,System.Boolean)">
+            <summary>
+            Create a proxy for the target object
+            </summary>
+            <param name="target">The object to create a proxy for</param>
+            <param name="invocationHandler">The invocation handler for the proxy</param>
+            <param name="strict">Indicates if the cast support should be strict. If strict is true all casts are checked before being performed</param>
+            <returns>The dynamic proxy instance</returns>
+        </member>
+        <member name="M:Cramon.NetExtension.DynamicProxy.DynamicProxyFactory.CreateProxy(System.Object,Cramon.NetExtension.DynamicProxy.InvocationDelegate,System.Boolean,System.Type[])">
+            <summary>
+            Create a proxy for the target object
+            </summary>
+            <param name="target">The object to create a proxy for</param>
+            <param name="invocationHandler">The invocation handler for the proxy</param>
+            <param name="strict">Indicates if the cast support should be strict. If strict is true all casts are checked before being performed. The supportedType list will enabled support for more interfaces than the target object supports</param>
+            <param name="supportedTypes">List of types that are supported for casts. Is only checked if strict is true.</param>
+            <returns>The dynamic proxy instance</returns>
+        </member>
+        <member name="M:Cramon.NetExtension.DynamicProxy.DynamicProxyFactory.CreateProxy(System.Object,Cramon.NetExtension.DynamicProxy.InvocationDelegate,System.Boolean,System.Type[],System.Object)">
+            <summary>
+            Create a proxy for the target object
+            </summary>
+            <param name="target">The object to create a proxy for</param>
+            <param name="invocationHandler">The invocation handler for the proxy</param>
+            <param name="strict">Indicates if the cast support should be strict. If strict is true all casts are checked before being performed. The supportedType list will enabled support for more interfaces than the target object supports</param>
+            <param name="supportedTypes">List of types that are supported for casts. Is only checked if strict is true.</param>
+            <param name="context">The context for invocation. It is a pass through string to the invocation handler.</param>
+            <returns>The dynamic proxy instance</returns>
+        </member>
+        <member name="P:Cramon.NetExtension.DynamicProxy.DynamicProxyFactory.Instance">
+            <summary>
+            Get the instance of the factory (singleton)
+            </summary>
+        </member>
+        <member name="T:Cramon.NetExtension.DynamicProxy.DynamicProxyImpl">
+            <summary>
+            The implementation for a dynamic proxy. Should not be instantiated directly, but rather through the
+            DynamicProxyFactory
+            </summary>
+        </member>
+        <member name="T:Cramon.NetExtension.DynamicProxy.IDynamicProxy">
+            <summary>
+            Interface for a dynamic proxy. Through this interface you can work on the proxy instance.
+            </summary>
+        </member>
+        <member name="P:Cramon.NetExtension.DynamicProxy.IDynamicProxy.Context">
+            <summary>
+            The context for invocation of target
+            </summary>
+        </member>
+        <member name="P:Cramon.NetExtension.DynamicProxy.IDynamicProxy.ProxyTarget">
+            <summary>
+            The target object for the proxy (aka. the proxied object)
+            </summary>
+        </member>
+        <member name="P:Cramon.NetExtension.DynamicProxy.IDynamicProxy.InvocationHandler">
+            <summary>
+            The delegate which handles the invocation task in the dynamic proxy
+            </summary>
+        </member>
+        <member name="P:Cramon.NetExtension.DynamicProxy.IDynamicProxy.Strict">
+            <summary>
+            Type support strictness. Used for cast strictness
+            </summary>
+        </member>
+        <member name="P:Cramon.NetExtension.DynamicProxy.IDynamicProxy.SupportedTypes">
+            <summary>
+            List of supported types for cast strictness support. Is only checked if Strict is true
+            </summary>
+        </member>
+        <member name="F:Cramon.NetExtension.DynamicProxy.DynamicProxyImpl.proxyTarget">
+            <summary>
+            The object we are the proxy for
+            </summary>
+        </member>
+        <member name="F:Cramon.NetExtension.DynamicProxy.DynamicProxyImpl.strict">
+            <summary>
+            Should we be strict regarding interface support?
+            </summary>
+        </member>
+        <member name="F:Cramon.NetExtension.DynamicProxy.DynamicProxyImpl.supportedTypes">
+            <summary>
+            A list of the types we support. Is only used when strict is true. The proxy targets type(s) are automatically supported
+            </summary>
+        </member>
+        <member name="F:Cramon.NetExtension.DynamicProxy.DynamicProxyImpl.invocationHandler">
+            <summary>
+            The delegate for handling the invocation part of the method call process
+            </summary>
+        </member>
+        <member name="F:Cramon.NetExtension.DynamicProxy.DynamicProxyImpl.context">
+            <summary>
+            The context for invocation
+            </summary>
+        </member>
+        <member name="M:Cramon.NetExtension.DynamicProxy.DynamicProxyImpl.#ctor(System.Object,Cramon.NetExtension.DynamicProxy.InvocationDelegate,System.Boolean,System.Type[],System.Object)">
+            <summary>
+            Creates a new proxy instance, with proxyTarget as the proxied object
+            </summary>
+            <param name="proxyTarget">The object to proxy</param>
+            <param name="strict">Should type support (for casts) be strict or loose</param>
+            <param name="supportedTypes">A List of supported types. Only used if strict is true. May be null</param>
+            <param name="invocationHandler">The invocation handler</param>
+            <param name="context">The context for invocation. This will be passed to invocation handler for its use.</param>
+        </member>
+        <member name="M:Cramon.NetExtension.DynamicProxy.DynamicProxyImpl.CreateObjRef(System.Type)">
+            <summary>
+            CreateObjRef() isn't supported.
+            </summary>
+            <param name="type"></param>
+            <returns>Nothing</returns>
+            <exception cref="T:System.NotSupportedException">CreateObjRef() for DynamicProxy isn't supported</exception>
+        </member>
+        <member name="M:Cramon.NetExtension.DynamicProxy.DynamicProxyImpl.CanCastTo(System.Type,System.Object)">
+            <summary>
+            Checks whether the proxy representing the specified object type can be cast to the type represented by the IRemotingTypeInfo interface
+            </summary>
+            <param name="toType">The Type we wish to cast to</param>
+            <param name="obj">The object we wish to cast</param>
+            <returns>True if the strict property is false, otherwise the list of supportedTypes is checked.<br>
+            The proxy targets type(s) are automatically supported</br></returns>
+        </member>
+        <member name="M:Cramon.NetExtension.DynamicProxy.DynamicProxyImpl.Invoke(System.Runtime.Remoting.Messaging.IMessage)">
+            <summary>
+            The reflective method for invoking methods. See documentation for RealProxy.
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Cramon.NetExtension.DynamicProxy.DynamicProxyImpl.Context">
+            <summary>
+            Context for target invocation
+            </summary>
+        </member>
+        <member name="P:Cramon.NetExtension.DynamicProxy.DynamicProxyImpl.TypeName">
+            <summary>
+            TypeName isn't supported since DynamicProxy doesn't support CreateObjRef()
+            </summary>
+            <exception cref="T:System.NotSupportedException">TypeName for Dynamic Proxy isn't supported</exception>
+        </member>
+        <member name="P:Cramon.NetExtension.DynamicProxy.DynamicProxyImpl.ProxyTarget">
+            <summary>
+            Returns the target object for the proxy
+            </summary>
+        </member>
+        <member name="P:Cramon.NetExtension.DynamicProxy.DynamicProxyImpl.InvocationHandler">
+            <summary>
+            The delegate which handles the invocation task in the dynamic proxy
+            </summary>
+        </member>
+        <member name="P:Cramon.NetExtension.DynamicProxy.DynamicProxyImpl.Strict">
+            <summary>
+            Type support strictness. Used for cast strictness
+            </summary>
+        </member>
+        <member name="P:Cramon.NetExtension.DynamicProxy.DynamicProxyImpl.SupportedTypes">
+            <summary>
+            List of supported types for cast strictness support. Is only checked if Strict is true
+            </summary>
+        </member>
+        <member name="T:Cramon.NetExtension.DynamicProxy.InvocationDelegate">
+            <summary>
+            Delegate for implementing the invocation task in a Dynamic Proxy
+            <code>
+            Example of an invocation handler
+            DynamicProxyFactory.Instance.CreateProxy(testClass, new InvocationDelegate(InvocationHandler))
+            
+            private static object InvocationHandler(object target, MethodBase method, object[] parameters, object context) {
+            	Console.WriteLine("Before: " + method.Name);
+            	object result = method.Invoke(target, parameters);
+            	Console.WriteLine("After: " + method.Name);
+            	return result;
+            }
+            </code>
+            </summary>
+        </member>
+    </members>
+</doc>
